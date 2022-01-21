@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Document</title>
+</head>
+<body class="container">
+        <h1 style="margin-left: 200px";>Registrazione</h1>
+
+        <form class="form-row align-items-center" method="post "action="#" onsubmit="validate()"style="margin-left: 200px"; >
+                <div class="col-auto">
+                    <label for="name" class="col-sm-0 col-form-label" >Nome*:</label>
+                    <input type="text" class="form-control mb-2"  id="name" name="name" placeholder="inserire il tuo nome" value="" >
+                    <p id="error_name" style="color: red;"></p>
+                    <label for="lastname" class="col-sm-0 col-form-label">Cognome*:</label>
+                    <input type="text" class="form-control mb-2"  id="lastname" name="lastname" placeholder="inserire il tuo cognome" value="" >
+                    <p id="error_lastname" style="color: red;"></p>
+                    <label for="username" class="col-sm-0 col-form-label">Username*:</label>
+                    <input type="text" class="form-control mb-2"  id="username" placeholder="inserire il tuo users" value="">
+                    <p id="error_username" style="color: red;"></p>
+                    <label for="date_of_birth" class="col-sm-0 col-form-label">Data di nasciata*:</label>
+                    <input type="date" class="form-control mb-2"  id="date_of_birth" placeholder="inserire la data" value="" >
+                    <p id="error_date" style="color: red;"></p>
+                    <div class="form-check form-check-inline">
+                        <input type="radio" class="form-check-input" name="gender"  id="genderMale" value="male" style="margin-right: 10px;">
+                        <div style="margin-right: 20px;">M</div>
+                        <input type="radio" class="form-check-input" name="gender" id="genderFemale"  value="female" style="margin-right: 10px;">
+                        <div>F</div>
+                    </div>
+                    <p id="error_gender" style="color: red;"></p>
+                    <label for="email" class="col-sm-0 col-form-label">Email*:</label>
+                    <input type="email" class="form-control mb-2" id="email" placeholder="inserire email" value="">
+                    <p id="error_email" style="color: red;"></p>
+                    <label for="pwd"class="col-sm-0 col-form-label">Password*:
+                        (inserire almeno 8 caratteri un lettera Maiusc e numero)
+                    </label>
+                    <input type="password" class="form-control mb-2" id="pwd" placeholder="inserire password" value="" >
+                    <p id="error_password" style="color: red;"></p>
+                    <input type="password" class="form-control mb-2" id="pwd_match" placeholder="inserire di nuovo la Pwd" value="">
+                    <p id="error_password_match" style="color: red;"></p>
+                    <input type="submit" id="button_signup" name="submit" value="registrati" >
+                
+                    </div>
+
+                </form>
+<script src="script.js"></script>
+</html>
